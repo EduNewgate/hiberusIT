@@ -1,0 +1,125 @@
+.hit-inputtext {
+    margin: 0px;
+    width: 100%;
+    height: 2em;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #173962;
+    border-radius: .25em;
+}
+
+.hit-inputtext:focus {
+    outline: 0 none;
+    outline-offset: 0;
+    box-shadow: 0 0 0 0.2rem rgba(23, 57, 98, 0.3);
+    transition: all ease-in-out .2s;
+}
+
+
+/* InputGroup */
+
+.hit-inputgroup,
+.hit-inputgroup-withIcon {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.hit-inputgroup-withIcon .hit-inputtext {
+    border-top-left-radius: 0em;
+    border-bottom-left-radius: 0em;
+}
+
+.hit-inputgroup-addon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    border-width: 1px 0px 1px 1px;
+    border-style: solid;
+    border-color: #173962;
+    border-top-left-radius: .25em;
+    border-bottom-left-radius: .25em;
+    background-color: rgba(23, 57, 98, 0.3);
+}
+
+.hit-inputgroup .hit-float-label {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.hit-inputgroup .hit-inputtext,
+.hit-fluid .hit-inputgroup .hit-inputtext,
+.hit-inputgroup .hit-inputwrapper,
+.hit-inputgroup .hit-inputwrapper>.hit-component {
+    flex: 1 1 auto;
+    width: 1%;
+}
+
+
+/* Floating Label */
+
+.hit-float-label {
+    display: block;
+    position: relative;
+}
+
+.hit-float-label label {
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    left: 0.5rem;
+    margin-top: -.5rem;
+    transition-property: all;
+    transition-timing-function: ease;
+    transition-duration: 0.2s;
+    line-height: 1;
+}
+
+.hit-float-label textarea~label {
+    top: 1rem;
+}
+
+.hit-float-label input:focus~label,
+.hit-float-label input.hit-filled~label,
+.hit-float-label textarea:focus~label,
+.hit-float-label textarea.hit-filled~label,
+.hit-float-label .hit-inputwrapper-focus~label,
+.hit-float-label .hit-inputwrapper-filled~label {
+    top: -.75rem;
+    font-size: 12px;
+}
+
+.hit-float-label .input:-webkit-autofill~label {
+    top: -20px;
+    font-size: 12px;
+}
+
+.hit-input-icon-left,
+.hit-input-icon-right {
+    position: relative;
+    display: inline-block;
+}
+
+.hit-input-icon-left>i,
+.hit-input-icon-right>i {
+    position: absolute;
+    top: 50%;
+    margin-top: -.5rem;
+}
+
+.hit-input-icon-left>i {
+    left: .5rem;
+}
+
+.hit-input-icon-right>i {
+    right: .5rem;
+}
+
+.hit-fluid .hit-input-icon-left,
+.hit-fluid .hit-input-icon-right {
+    display: block;
+    width: 100%;
+}

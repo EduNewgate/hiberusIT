@@ -1,0 +1,9 @@
+<div [ngClass]="toggleInputgroupClass()">
+    <span *ngIf="hasIcon()" class="hit-inputgroup-addon material-icons">
+        {{icon}}
+    </span>
+    <span class="hit-float-label">
+        <input type="text" id="inputgroup" hitInputText />
+        <label for="inputgroup">{{label}}</label>
+    </span>
+</div>
